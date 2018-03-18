@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block head_title %} Nosotros || {{ block.super }} {% endblock head_title %}
+
+{% load static %}
+{% load i18n %}
+
+
+{% block section %}
+
+
+        <div class="texto-encabezado text-center">
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">Servicios</h1>
+                <p class="wow bounceInUp" data-wow-delay=".3s">Diseñamos Apps para empresas</p>
+            </div>
+
+        </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <section class="ruta">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <a href="index.html">Inicio</a>>>Nosotros
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <main class="lista-servicios">
+        <div class="servicios-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <article class="item-servicios">
+                            <i class="fas fa-bullseye wow fadeIn" aria-hidden="true"></i>
+                            <h4 class="wow fadeIn">Desarrollo de Aplicaciones Moviles</h4>
+                            <p class="wow fadeIn">
+                                Desarrollamos aplicaciones moviles y plataformas web. Nuestra principal cualidad esta en el desarrollo de software a medida de tus necesidades.
+                            </p>
+                            <a href="" class="btn btn-primary wow fadeIn" data-toggle="modal" data-target="#servicio1">Más información</a>
+
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="item-servicios">
+                            <i class="fas fa-bullhorn wow fadeIn" aria-hidden="true"></i>
+                            <h4 class="wow fadeIn">Consultoría Tecnológica</h4>
+                            <p class="wow fadeIn">
+                                Desarrollamos aplicaciones moviles y plataformas web. Nuestra principal cualidad esta en el desarrollo de software a medida de tus necesidades.
+                            </p>
+                            <a href="" class="btn btn-primary wow fadeIn" data-toggle="modal" data-target="#servicio2">Más información</a>
+
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="item-servicios">
+                            <i class="fas fa-paper-plane wow fadeIn" aria-hidden="true"></i>
+                            <h4 class="wow fadeIn">Marketing y Publicidad Movil</h4>
+                            <p class="wow fadeIn">
+                                Desarrollamos aplicaciones moviles y plataformas web. Nuestra principal cualidad esta en el desarrollo de software a medida de tus necesidades.
+                            </p>
+                            <a href="" class="btn btn-primary wow fadeIn" data-toggle="modal" data-target="#servicio3">Más información</a>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {% include "snippets/modal_servicios.html" %}
+
+{% endblock %}
+
+

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block section %} 
+
+
+
+        <div class="texto-encabezado text-center">
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">Contacto</h1>
+                <p class="wow bounceInUp" data-wow-delay=".3s">Estamos listos para ayudarte</p>
+            </div>
+
+        </div>
+
+{% endblock %}
+
+{% block content %} 
+
+    <section class="ruta">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-right">
+                    <div class="col-md-8">
+
+                    </div>
+                    <a href="{% url 'home' %}">Inicio</a>>>Contacto
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                 {% csrf_token %}
+
+               
+                    {% crispy form %}
+
+                </div>
+                <div class="col-md-4">
+                    <h3>Detalles de contacto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque tempore odit, fuga velit culpa eveniet numquam non neque dignissimos, ab architecto provident rem minus assumenda perferendis ducimus ut porro hic.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus tempora repudiandae voluptate error voluptates animi nemo necessitatibus, doloremque quasi iusto atque quod rem porro odio ratione, reiciendis deleniti cupiditate a?</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+{% endblock %}
+
+
+

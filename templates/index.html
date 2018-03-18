@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block head_title %} Bienvenidos || {{ block.super }} {% endblock head_title %}
+
+
+{% load static %}
+{% load i18n %}
+
+    {% block section %}
+
+    
+        
+        <div class="texto-encabezado text-center">
+            <div class="container">
+                <h1 class="display-4 wow bounceIn">Diseño de Apps para Empresas</h1>
+                <p class="wow fadeIn" data-wow-delay=".3s">Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes.</p>
+                <a href="{% url 'contacto' %}" class="btn btn-primary btn-lg">Ponte en contacto</a>
+            </div>
+
+
+        </div>
+        <div class="flecha-bajar text-center">
+            <a data-scroll href="#agencia">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </a>
+        </div>
+
+    {% endblock section %}
+
+    {% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon id="poli1" points="100 0 100 10 0 10" />
+    </svg>
+    <section class="agencia p-y-sm-1" id="agencia">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-md-8 col-xl-9 wow fadeIn" data-wow-delay=".3">
+                    <h2 class="h3 text-center text-md-left font-weight-bold">Agencia de programación de aplicaciones</h2>
+                    <p>NETWORK te asesora en el desarrollo y el diseño para que tu Aplicación Movil salga a la luz. Ponemos a tu disposición las mejores plataformas del mundo de las telecomunicroaciones.</p>
+
+                    <p>Ponemos a tu alcance un servicio adaptado a tus necesidades, desde una consultoría integral con supervisión de todos y cada uno de los pasos que has de seguir para crear un negocio actual (comunicación, diseño corporativo, tecnologías...) a productos adaptados a metodologías ágiles de creación de apps diseñadas por nosotros y avaladas por nuestros años de experiencia.</p>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <img src="{% static 'images/agencia.svg' %}" alt="Mundo movil" class="wow fadeIn" data-wow-delay=".6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon id="poli2" points="0 0 100 10 0 10" />
+    </svg>
+    <section class="tu-mejor-eleccion">
+        <div class="container">
+            <h2 class="h3 text-center font-weight-bold">¿Porque somos <span>tu mejor elección?</span></h2>
+            <p class="text-center">Desarrollo web y Apps para empresas y profesionales</p>
+            <div class="row">
+                <ul class="col-6 col-lg-4 text-center text-lg-left">
+                    <li class="wow zoomIn" data-wow-duration=".4s" data-wow-delay=".3s">
+                        <i class="fas fa-briefcase" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Aplicaciones para la nube</h4>
+                            <p class="hidden-md-down">Para empresa que requiera ampliar sus plataformas de gestión.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".4s" data-wow-delay=".5s">
+                        <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Fabrica de Software</h4>
+                            <p class="hidden-md-down">Servicios de mejora correctiva y evolutiva para sus aplicaciones.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".4s" data-wow-delay=".7s">
+                        <i class="far fa-comment" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Gestion en la nube</h4>
+                            <p class="hidden-md-down">Para empresa que requiera ampliar sus plataformas de gestión.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container-fluid hidden-md-down col-lg-4">
+                    <img src="{% static 'images/imagen_centro.svg' %}" alt="">
+                </div>
+                <ul class="col-6 col-lg-4 text-center text-lg-right">
+                    <li class="wow zoomIn" data-wow-duration=".4s" data-wow-delay=".3s">
+                        <i class="fas fa-calendar" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion right-side">
+                            <h4>Videojuegos</h4>
+                            <p class="hidden-md-down">Para empresa que requiera ampliar sus plataformas de gestión.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".4s" data-wow-delay=".5s">
+                        <i class="far fa-check-square" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion right-side">
+                            <h4>Reconocimiento Internacional</h4>
+                            <p class="hidden-md-down">Para empresa que requiera ampliar sus plataformas de gestión.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".4s" data-wow-delay=".7s">
+                        <i class="fas fa-cogs" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion right-side">
+                            <h4>Funciones a medida</h4>
+                            <p class="hidden-md-down">Para empresa que requiera ampliar sus plataformas de gestión.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <svg id="svg5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon id="poli5" points="0 0 100 10 0 10" />
+    </svg>     
+    <main class="servicios">
+
+
+        <div class="container">
+            <h2 class="h3 text-center font-weight-bold">Nuestros Servicios</h2>
+            <div class="row">
+                <article class="col-md-4 wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
+                    <i class="fas fa-tablet" aria-hidden="true"></i>
+                    <h3><a href="#">Desarrollo de Aplicaciones Moviles</a></h3>
+                    <p class="col-md-4 hidden-sm-down">Desarrollamos aplicaciones móviles y plataformas web. Nuestra principal cualidad está en el desarrollo de software a medida de tus necesidades.</p>
+                    <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+
+                </article>
+                <article class="col-md-4 wow fadeIn" data-wow-duration="1s" data-wow-delay=".6s">
+                    <i class="fas fa-briefcase" aria-hidden="true"></i>
+                    <h3><a href="#">Consultoria Tecnologica</a></h3>
+                    <p class="col-md-4 hidden-sm-down">Desarrollamos aplicaciones móviles y plataformas web. Nuestra principal cualidad está en el desarrollo de software a medida de tus necesidades.</p>
+                    <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+
+                </article>
+                <article class="col-md-4 wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                    <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                    <h3><a href="#">Marketing y publicidad movil</a></h3>
+                    <p class="col-md-4 hidden-sm-down">Desarrollamos aplicaciones móviles y plataformas web. Nuestra principal cualidad está en el desarrollo de software a medida de tus necesidades.</p>
+                    <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+
+                </article>
+            </div>
+        </div>
+    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon id="poli3" points="100 0 100 10 0 10" />
+    </svg>
+    <!--EL SLIDER DE IMAGENES SE CREA CON UN PLUGIN DE JQUERY-->
+    <section class="ultimos-proyectos p-y-1">
+        <div class="container">
+            <h2 class="text-center font-weight-bold">Ultimos Proyectos</h2>
+            <div class="owl-carousel wow fadeIn">
+                <a href="#">
+                    <h4>App Lima Travels</h4>
+                    <img class="olw-img" src="{% static 'images/proyecto1.jpg' %}" alt="App Lima Travels">
+                </a>
+
+                <a href="#">
+                    <h4>Apps Uber</h4>
+                    <img class="olw-img" src="{% static 'images/proyecto2.jpg' %}" alt="Apps Uber">
+                </a>
+
+                <a href="#">
+                    <h4>App Pizza Perú</h4>
+                    <img class="olw-img" src="{% static 'images/proyecto3.jpg' %}" alt="App Pizza Perú">
+                </a>
+
+                <a href="#">
+                    <h4>App Muebles Hoy</h4>
+                    <img class="olw-img" src="{% static 'images/proyecto4.jpg' %}" alt="App Muebles Hoy">
+                </a>
+
+                <a href="#">
+                    <h4>App Clima Peru</h4>
+                    <img class="olw-img" src="{% static 'images/proyecto5.jpg' %}" alt="App Clima Peru">
+                </a>
+
+                <a href="#">
+                    <h4>App Playa</h4>
+                    <img src="{% static 'images/proyecto5.jpg' %}" alt="App Playa">
+                </a>
+            </div>
+        </div>
+    </section>
+    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+      <polygon id="poli4" points="0 0 100 10 0 10" />
+    </svg>
+
+
+
+{% endblock %}

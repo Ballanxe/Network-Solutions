@@ -1,0 +1,45 @@
+ {% load static %} 
+
+  <script
+src="https://code.jquery.com/jquery-3.1.1.js"
+integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          autoWidth: false,
+
+          navText: ['<i class="fas fa-arrow-circle-left" title="Anterior"></i>', '<i class="fas  fa-arrow-circle-right" title="Siguiente"></i>'],
+          responsive: {
+              0: {
+                  items: 1
+              },
+              500: {
+                  items: 2,
+                  margin: 20
+              },
+              800: {
+                  items: 3,
+                  margin: 20
+              },
+              1000: {
+                  items: 4,
+                  margin: 20
+              }
+          }
+      })
+  </script>
+  <script src="{% static 'js/wow.min.js' %}"></script>
+  <script src="{% static 'js/smooth-scroll.min.js' %}"></script>
+  <script src="{% static 'js/sitio.js' %}"></script>
+  <script type="text/javascript">
+      new WOW().init();
+  </script>
+ 
+

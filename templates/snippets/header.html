@@ -1,0 +1,30 @@
+{% load static %}
+
+<header class="encabezado navbar fixed-top" rol="banner" id="encabezado">
+    <div class="container">
+        <a href="{% url 'home' %}" class="logo">
+            <img src="{% static 'images/logo.svg' %}" alt="logo del sitio">
+        </a>
+<!--         <button type="button" class="boton-buscar" data-toggle="collapse" href="#bloque-buscar" aria-expanded="false" aria-controls="bloque-buscar">
+            <i class="fas fa-search" aria-hidden="true"></i>
+        </button> -->
+        <button type="button" class="boton-menu hidden-md-up" data-toggle="collapse" href="#menu-principal" aria-expanded="false" aria-controls="menu-principal">
+            <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+<!--         <form action="#" id="bloque-buscar" class="collapse">
+            <div class="contenedor-bloque-buscar">
+                <input type="text" Placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </div>
+
+        </form> -->
+        <nav id="menu-principal" class="collapse">
+            <ul>
+                <li class="active"><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+                <li><a href="{% url 'servicios' %}">Servicios</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
